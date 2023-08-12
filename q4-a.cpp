@@ -6,7 +6,7 @@ int main()
    int i,j,temp;
    for(i=0;i<5;i++)
    {
-       for(j=0;j<(5-i);j++)
+       for(j=0;j<(4-i);j++)
        {
            temp=arr[j];
            arr[j]=arr[j+1];
