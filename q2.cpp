@@ -38,16 +38,19 @@ int sort(int arr[])
 int func(int arr[])
 {
     int i,j,k,size=9;
-    for(i=0;i<9;i++)
+    for(i=0;i<size;i++)
     {
-        if(arr[i]==arr[i+1])
+        for(j=0;j<size;j++)
+        {
+            if(arr[j]==arr[j+1])
             {
-                for(k=i+1;k<9;k++)
+                for(k=j;k<size;k++)
                 {
                     arr[k]=arr[k+1];
                 }
                 size--;
             }
+        }
     }
     cout<<"Final array:"<<endl;
     for(i=0;i<size;i++)
